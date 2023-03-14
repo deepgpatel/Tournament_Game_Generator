@@ -1,3 +1,13 @@
+def get_number_of_teams():
+    while True:
+        num_teams = int(input("Enter the number of teams in the tournament: "))
+        
+        if num_teams >= 2:
+            break
+        print("The minimum number of teams is 2, try again.")
+        
+    return num_teams
+
 def get_team_names(num_teams):
     team_names = []
     for idx in range(num_teams):
@@ -16,5 +26,5 @@ def get_team_names(num_teams):
     
     return team_names
 
-
-team_names = get_team_names(2)
+num_teams = get_number_of_teams()
+team_names = get_team_names(num_teams)
