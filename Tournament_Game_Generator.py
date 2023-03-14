@@ -26,5 +26,18 @@ def get_team_names(num_teams):
     
     return team_names
 
+def get_number_of_games_played(num_teams):
+    while True:
+        games_played = int(input("Enter the number of games played by each team: "))
+        
+        if games_played >= num_teams - 1:
+            break
+        
+        print("Invalid number of games. Each team plays each other at least once in the regular season, try again.")
+        
+    return games_played
+
+
+
 num_teams = get_number_of_teams()
 team_names = get_team_names(num_teams)
