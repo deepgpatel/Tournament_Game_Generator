@@ -41,3 +41,4 @@ def get_number_of_games_played(num_teams):
 
 num_teams = get_number_of_teams()
 team_names = get_team_names(num_teams)
+games_played = get_number_of_games_played(num_teams)
